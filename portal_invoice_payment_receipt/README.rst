@@ -32,7 +32,7 @@ LGPLライセンスで適当な領収書印刷機能がなかったため、プ�
 設計方針（既存モジュールとの関係）
 ==================================
 
-``website_portal_sale`` および ``invoice_payment_receipt`` モジュールに依存。
+* ``website_portal_sale`` および ``invoice_payment_receipt`` モジュールに依存。
 
 * テンプレート ``portal_my_invoices`` を継承し、請求書ステータスが「入金済」であれば既存のカラムに「領収書ダウンロード」ボタンを表示するよう調整。
 
