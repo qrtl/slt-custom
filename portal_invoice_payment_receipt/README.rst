@@ -8,7 +8,7 @@ Print Invoice Payment Receipt - Portal
 
 このモジュールは、カスタマがポータルページから領収書をダウンロードするための機能を追加します。
 
-このモジュールは、Probuse Consulting Service Pvt. Ltd.作成のプライベートモジュール`invoice_payment_receipt`に依存します。
+このモジュールは、Probuse Consulting Service Pvt. Ltd.作成のプライベートモジュール `invoice_payment_receipt` に依存します。
 
 設定
 ====
@@ -21,7 +21,7 @@ Print Invoice Payment Receipt - Portal
 ポータル画面（マイアカウント > 請求書と支払）に入金済の請求書につき、「領収書ダウンロード」ボタンが追加される。
 このボタンを押すと、領収書のPDFファイルがダウンロードされる。
 
-依存モジュール（`invoice_payment_receipt`）選定理由
+依存モジュール（ `invoice_payment_receipt` ）選定理由
 ===================================================
 
 LGPLライセンスで適当な領収書印刷機能がなかったため、プロプライエタリモジュールで使えそうなものを検索。
