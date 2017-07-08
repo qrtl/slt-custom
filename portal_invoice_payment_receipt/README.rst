@@ -8,7 +8,7 @@ Print Invoice Payment Receipt - Portal
 
 このモジュールは、カスタマがポータルページから領収書をダウンロードするための機能を追加します。
 
-このモジュールは、Probuse Consulting Service Pvt. Ltd.作成のプライベートモジュール `invoice_payment_receipt` に依存します。
+このモジュールは、Probuse Consulting Service Pvt. Ltd.作成のプライベートモジュール ``invoice_payment_receipt`` に依存します。
 
 設定
 ====
@@ -21,7 +21,7 @@ Print Invoice Payment Receipt - Portal
 ポータル画面（マイアカウント > 請求書と支払）に入金済の請求書につき、「領収書ダウンロード」ボタンが追加される。
 このボタンを押すと、領収書のPDFファイルがダウンロードされる。
 
-依存モジュール（ `invoice_payment_receipt` ）選定理由
+依存モジュール（ ``invoice_payment_receipt`` ）選定理由
 ===================================================
 
 LGPLライセンスで適当な領収書印刷機能がなかったため、プロプライエタリモジュールで使えそうなものを検索。
@@ -32,11 +32,12 @@ LGPLライセンスで適当な領収書印刷機能がなかったため、プ�
 設計方針（既存モジュールとの関係）
 ==================================
 
-`website_portal_sale`および`invoice_payment_receipt`モジュールに依存。
+``website_portal_sale`` および ``invoice_payment_receipt`` モジュールに依存。
 
-* テンプレート`portal_my_invoices`を継承し、請求書ステータスが「入金済」であれば既存のカラムに「領収書ダウンロード」
+* テンプレート ``portal_my_invoices`` を継承し、請求書ステータスが「入金済」であれば既存のカラムに「領収書ダウンロード」
 ボタンを表示するよう調整。
-* 「領収書ダウンロード」ボタンの参照先URLに紐付くメソッド（`print_invoice`）を定義し、その中で`invoice_payment_receipt`で
+
+* 「領収書ダウンロード」ボタンの参照先URLに紐付くメソッド（ ``print_invoice`` ）を定義し、その中で ``invoice_payment_receipt`` で
 追加された領収書レポートIDを指定し、PDFファイルをダウンロードするよう指定。
 
 
