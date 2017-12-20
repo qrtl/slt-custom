@@ -4,7 +4,7 @@
 {
     'name': 'Print Invoice Payment Receipt - Portal',
     'summary': 'Allows customers to print invoice receipts from portal page.',
-    'version':'10.0.1.0.0',
+    'version':'10.0.1.0.1',
     'license': 'LGPL-3',
     'category':'Website',
     'description': """
