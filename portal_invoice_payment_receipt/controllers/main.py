@@ -7,9 +7,9 @@ from odoo.http import request
 
 
 class Payment_Receipt(http.Controller):
-    
+
     @http.route(['/website_invoice/print/<model("account.invoice"):invoice>'],
-            type='http', auth="public", website=True)
+            type='http', auth="user", website=True)
     def print_invoice(self, invoice):
         if invoice:
             pdf = request.env['report'].sudo().get_pdf(
